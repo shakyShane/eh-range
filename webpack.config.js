@@ -2,7 +2,8 @@ module.exports = {
     entry: ['./src/main'],
     output: {
         path: require('path').join(__dirname, 'app'),
-        filename: 'dist/bundle.js'
+        filename: 'dist/bundle.js',
+        publicPath: '/'
     },
     module: {
         loaders: [
